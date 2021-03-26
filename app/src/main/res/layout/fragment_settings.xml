@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/HomeLayoutStyle"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/LayoutTitleStyle"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/bixin_settings" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_bt_switch"
+            style="@style/btSettingsStyle"
+            android:layout_alignParentStart="true"
+            android:text="@string/bt_switch" />
+
+        <Switch
+            android:id="@+id/switch_bt"
+            style="@style/btSettingsStyle"
+            android:layout_alignParentEnd="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/btSettingsStyle"
+            android:layout_alignParentStart="true"
+            android:text="@string/bt_name" />
+
+        <TextView
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:id="@+id/tv_bt_name"
+            style="@style/btSettingsStyle"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_6043_beij"
+            android:text="Bixin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/btSettingsStyle"
+            android:layout_alignParentStart="true"
+            android:text="@string/bt_pin_code" />
+
+        <TextView
+            android:text="0000"
+            android:gravity="center"
+            android:id="@+id/tv_bt_code"
+            style="@style/btSettingsStyle"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_6043_beij"
+            android:minWidth="150dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_connected_device_name_title"
+            style="@style/btSettingsStyle"
+            android:layout_alignParentStart="true"
+            android:text="@string/bt_connected_device_name" />
+
+        <TextView
+            android:id="@+id/tv_bt_state"
+            style="@style/btSettingsStyle"
+            android:layout_toEndOf="@id/tv_connected_device_name_title" />
+
+        <TextView
+            android:id="@+id/tv_connected_device_name"
+            style="@style/btSettingsStyle"
+            android:layout_alignParentEnd="true"
+            android:text="" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HomeLayoutStyle"
+    android:background="@drawable/beijing">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/tv_incoming_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textColor="#fff"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_incoming_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_incoming_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_incoming_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_incoming_number"
+            android:layout_centerHorizontal="true"
+            android:text="来电..."
+            android:textColor="#fff"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/iv_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_incoming_status"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/selector_btn_jianpan_bohao" />
+
+        <ImageView
+            android:id="@+id/iv_hangup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_incoming_status"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="150dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/selector_btn_jianpan_guaduan" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bt_settings">蓝牙设置</string>
+    <string name="bt_music">蓝牙音乐</string>
+    <string name="bt_phone">蓝牙电话</string>
+    <string name="app_name">蓝牙</string>
+    <string name="bixin_address_book">蓝牙通讯录</string>
+    <string name="bt_switch">蓝牙开关</string>
+    <string name="in_calling">正在呼叫...</string>
+    <string name="is_talking">正在通话:</string>
+    <string name="bt_pin_code">连接密码</string>
+    <string name="bt_name">蓝牙名字</string>
+    <string name="bx_bt_music">蓝牙音乐</string>
+    <string name="please_connect_bt">请先连接设备</string>
+    <string name="bt_connected_device_name">蓝牙连接状态</string>
+    <string name="bixin_settings">蓝牙设置</string>
+    <string name="edit_dialog_title_pin">修改蓝牙PIN</string>
+    <string name="edit_dialog_title_bt_name">修改蓝牙名字</string>
+    <string name="dialog_message">正在加载通讯录，请稍等</string>
+    <string name="agree_to_synchronize_contacts">请在手机开启同步通讯录再重试</string>
+    <string name="please_connect_device">请先连接设备</string>
+    <string name="click_download_phone_book">点击下载电话本</string>
+    <string name="bt_music_lyric">歌词</string>
+    <string name="please_input_number">请输入4位数字的PIN code</string>
+    <string name="song_title">歌曲名</string>
+    <string name="singer_title">歌手</string>
+    <string name="bt_connected">" (已连接)"</string>
+    <string name="bt_no_connected">" (未连接)"</string>
+    <string name="phone_call_this_number">"确定要拨打该号码吗? "</string>
+    <string name="want_to_call_this_number">确定要拨打吗?</string>
+    <string name="dialog_title_tips">提示</string>
+    <string name="please_input_phone_number">请输入电话号码</string>
+    <string name="bt_call_phone">蓝牙拨号</string>
+</resources>

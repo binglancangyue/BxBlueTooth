@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '29.0.3'
+
+    defaultConfig {
+        applicationId "com.bixin.bluetooth"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 1
+        versionName '1.0.210325.1'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            // 开启混淆
+            minifyEnabled false
+            // Zipalign压缩优化
+            zipAlignEnabled true
+            // 移除无用的资源文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            // Zipalign压缩优化
+            zipAlignEnabled true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path file("src/main/jni/Android.mk")
+        }
+    }
+    ndkVersion '22.1.7171670'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.jcodecraeer:xrecyclerview:1.5.9'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.4'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-navi:2.2.2'
+    implementation 'com.qmuiteam:qmui:2.0.0-alpha10'
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <string name="bt_settings">Settings</string>
+        <string name="bt_music">Music</string>
+        <string name="bt_phone">Phone</string>-->
+    <string name="bt_settings">Setting</string>
+    <string name="bt_music">Music</string>
+    <string name="bt_phone">Phone</string>
+    <string name="app_name">Bluetooth</string>
+    <string name="bixin_address_book">Bluetooth address book</string>
+    <string name="bt_switch">Bluetooth switch</string>
+    <string name="in_calling">Calling...</string>
+    <string name="is_talking">On the phone:</string>
+    <string name="bt_pin_code">Pin code</string>
+    <string name="bt_name">Bluetooth name</string>
+    <string name="bx_bt_music">Bluetooth music</string>
+    <string name="please_connect_bt">Please connect the device first</string>
+    <string name="bt_connected_device_name">Bluetooth connection status</string>
+    <string name="bixin_settings">Bluetooth Settings</string>
+    <string name="edit_dialog_title_pin">Modify Bluetooth PIN</string>
+    <string name="edit_dialog_title_bt_name">Change Bluetooth name</string>
+    <string name="dialog_message">Loading address book, please wait</string>
+    <string name="agree_to_synchronize_contacts">Please open the synchronous address book on your mobile phone and try again</string>
+    <string name="please_connect_device">Please connect the device first</string>
+    <string name="click_download_phone_book">Click to download the phone book</string>
+    <string name="bt_music_lyric">Lyric</string>
+    <string name="please_input_number">Please enter a 4-digit PIN code</string>
+    <string name="song_title">Song title</string>
+    <string name="singer_title">Singer</string>
+    <string name="bt_connected">" (Connected)"</string>
+    <string name="bt_no_connected">" (Unconnected)"</string>
+    <string name="phone_call_this_number">Are you sure you want to dial this number </string>
+    <string name="want_to_call_this_number">Are you sure you want to dial? </string>
+    <string name="dialog_title_tips">Tips</string>
+    <string name="please_input_phone_number">Please enter the phone number</string>
+    <string name="bt_call_phone">Dial</string>
+</resources>
