@@ -3,34 +3,25 @@ plugins {
 }
 
 android {
-    compileSdkVersion 28
+    signingConfigs {
+        config {
+            keyAlias 'BiXinBlueTooth'
+            storePassword '12345678'
+            keyPassword '12345678'
+            storeFile file('E:\\AndroidStudioWork\\BiXinBlueTooth_20210111\\BiXinBlueTooth\\BxBlueTooth.jks')
+        }
+    }
+    compileSdkVersion 29
     buildToolsVersion '29.0.3'
 
     defaultConfig {
         applicationId "com.bixin.bluetooth"
         minSdkVersion 23
-        targetSdkVersion 27
+        targetSdkVersion 29
         versionCode 1
-        versionName '1.0.210325.1'
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionName '1.0.210401.1'
     }
 
-    buildTypes {
-        release {
-            // 开启混淆
-            minifyEnabled false
-            // Zipalign压缩优化
-            zipAlignEnabled true
-            // 移除无用的资源文件
-            shrinkResources false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-        debug {
-            // Zipalign压缩优化
-            zipAlignEnabled true
-        }
-    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
